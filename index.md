@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Index!
+title: Brent Gardner | home
 tagline: Supporting tagline
 ---
 {% include JB/setup %}
