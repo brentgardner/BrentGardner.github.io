@@ -1,15 +1,18 @@
 ---
 layout: page
-title: Brent Gardner | home
-tagline: Supporting tagline
+title: Brent Gardner
+tagline: I write a little code...
 ---
 {% include JB/setup %}
 
-<ul class="posts">
-  {% for post in site.posts %}
-    <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
-  {% endfor %}
-</ul>
 
+### I'm Brent
+
+I write software and work with databases.  I'm always working to improve my craft.
+
+You can find me a couple places on the web...
+
+
+This website is created with Jekyll. [Other Jekyll websites](https://github.com/mojombo/jekyll/wiki/Sites).
 
 
