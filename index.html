@@ -5,9 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+	<link rel="stylesheet" href="css/default.css" type="text/css" media="screen" title="no title" charset="utf-8">
+	
   </head>
   <body>
-	  <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+	  
+	  <div class="navbar navbar-inverse" role="navigation">
         <div class="container">
           <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -16,30 +19,50 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">Brent-Gardner.com</a>
+            <a class="navbar-brand" href="index.html">Brent-Gardner.com</a>
           </div>
-          <div class="collapse navbar-collapse">
-            <ul class="nav navbar-nav">
-              <li class="active"><a href="#">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects <span class="caret"></span></a>
-				  <ul class="dropdown-menu" role="menu">
-    		  		</ul>
-						<li><a href="bmrCalculator.html">BMR Calculator</a></li>
-					</li>
-            </ul>
-          </div><!--/.nav-collapse -->
+		  <!-- Collect the nav links, forms, and other content for toggling -->
+		      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		        <ul class="nav navbar-nav">
+		          <li class="dropdown">
+		            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects <span class="caret"></span></a>
+		            <ul class="dropdown-menu" role="menu">
+		              <li><a href="bmrCalculator.html">BMR Calculator</a></li>
+		            </ul>
+		          </li>
+		        </ul>
+		      </div><!-- /.navbar-collapse -->
         </div>
 	  </div>
 
+	  
       <div class="container">
 
         <div class="starter-template">
-          <h1>Bootstrap starter template</h1>
-          <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
+          <h1>Brent Gardner</h1>
+          <p class="lead">I am a software developer.</p>
+		  <p>Application Developer in a wide variety of line of business applications. Experienced in all phases of the software development life cycle. Interests include inventory systems, asset control systems, and database design.
+My current focus area is developing and implementing trading partner communication systems and automating natural gas and electric control processes with utilities throughout the US.
+Currently, I work primarily in C# and the SQL Server stack and I continue to work with PHP and MySQL. I pride myself on my ability to quickly come up to speed on any project or development infrastructure.</p>
+
+			<div id="badges">
+				<ul>
+					<li>
+						<a href="http://www.linkedin.com/in/brentgarrdner">
+      			  			<img src="https://static.licdn.com/scds/common/u/img/webpromo/btn_myprofile_160x33.png" width="160" height="33" border="0" alt="View Brent Gardner's profile on LinkedIn">
+						</a>
+					</li>
+					<li>
+						<a href="https://github.com/brentgardner">
+      			  			<img src="img/Octocat.png" width="100" height="83" alt="View My Git Hub Profile" />
+						</a>
+					</li>
+				<ul>	
+			</div>
         </div>
 
       </div><!-- /.container -->
-	  
+      <script src="http://code.jquery.com/jquery.js"></script>
+      <script src="js/bootstrap.min.js"></script>
   </body>
 </html>

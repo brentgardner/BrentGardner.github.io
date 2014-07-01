@@ -7,91 +7,131 @@
     <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
   </head>
   <body>
+  <div class="navbar navbar-inverse" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">Brent-Gardner.com</a>
+        </div>
+	  <!-- Collect the nav links, forms, and other content for toggling -->
+	      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	        <ul class="nav navbar-nav">
+	          <li class="dropdown">
+	            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects <span class="caret"></span></a>
+	            <ul class="dropdown-menu" role="menu">
+	              <li class="active"><a href="bmrCalculator.html">BMR Calculator</a></li>
+	            </ul>
+	          </li>
+	        </ul>
+	      </div><!-- /.navbar-collapse -->
+      </div>
+  </div>
 	<section class="container">
 		<div class="page-header">
 			<h2>BMR Calculator</h2>
-			<small>What is your basal metabolic rate</small>
+			
 			<p class="required_notification">* Indicates Required Field</p>
 		</div>
-		
-		<form id="BMRForm" class="form-horizontal" role="form">
-			 <div class="form-group">
-				<label for="weight" class="col-sm-1 control-label">Weight:</label>
-				<div class="col-sm-2">
-					<input id="weight" placeholder="Weight in lbs." autofocus="autofocus" type="number" min="50" max="500" required="required" class="form-control"/>
-				</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+				<form id="BMRForm" class="form-horizontal" role="form">
+					<div class="form-group">
+						<label for="weight" class="col-sm-1 control-label">Weight:</label>
+						<div class="col-sm-4">
+							<input id="weight" placeholder="Weight in lbs." autofocus="autofocus" type="number" min="50" max="500" required="required" class="form-control"/>
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="feet" class="col-sm-1 control-label">Height:</label>
+						<div class="col-sm-2">
+							<input id="feet" placeholder="Feet" type="number" min="3" max="10" required="required" class="form-control"/>
+						</div>
+						<div class="col-sm-2">
+							<input id="inches" placeholder="inches" type="number" min="0" max="11" required="required" class="form-control"/>
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="age" class="col-sm-1 control-label">Age:</label> 
+						<div class="col-sm-2">
+							<input id="age" placeholder="age" type="number" min="1" max="110" required="required" class="form-control"/>
+						</div>
+					</div>
+					<div class="form-group">
+						<fieldset class="col-sm-offset-1">
+						<legend>Gender</legend>
+							<div class="radio">
+								<label class="control-label">
+									<input type="radio" name="optionsRadios" id="male" value="male" checked>Male
+								</label>
+							</div>
+							<div class="radio">
+								<label class="control-label">
+								<input type="radio" name="optionsRadios" id="female" value="female">Female
+								</label>
+							</div>
+						</fieldset>
+					</div>
+					<div class="form-group">
+					<fieldset class="col-sm-offset-1">
+						<legend>Activity Level</legend>
+							<div class="radio">
+							  <label class="control-label">
+							    <input type="radio" name="activity" id="sedentary" value="1.2" checked>sedentary (little or no exercise)
+							  </label>
+							</div>
+							<div class="radio">
+							  <label class="control-label">
+							    <input type="radio" name="activity" id="lightly" value="1.375">light exercise/sports 1-3 days/week
+							  </label>
+							</div>
+							<div class="radio">
+							  <label class="control-label">
+							    <input type="radio" name="activity" id="moderately" value="1.55">moderatetely active (moderate exercise/sports 3-5 days/week) 
+							  </label>
+							</div>
+							<div class="radio">
+							  <label class="control-label">
+							    <input type="radio" name="activity" id="heavy" value="1.725">heavy excercise (hard exercise/sports 6-7 days a week)
+							  </label>
+							</div>
+							<div class="radio">
+							  <label class="control-label">
+							    <input type="radio" name="optionsRadios" id="very" value="1.9">very heavy exercise (very hard exercise/sports &amp physical job or 2x training)
+							  </label>
+							</div>
+					</fieldset>	
+					</div>
+					<br />
+					<div class="form-group">
+						<div class="col-sm-10">
+							<input id="submitbutton" class="btn btn-primary btn-lg active" type="submit" value="Calculate It" />
+						</div>
+					</div>
+				</form>
 			</div>
-			<div class="form-group">
-				<label for="feet" class="col-sm-1 control-label">Height:</label>
-				<div class="col-sm-1">
-					<input id="feet" placeholder="Feet" type="number" min="3" max="10" required="required" class="form-control"/>
-				</div>
-				<div class="col-sm-1">
-					<input id="inches" placeholder="inches" type="number" min="0" max="11" required="required" class="form-control"/>
-				</div>
-			</div>
-			 <div class="form-group">
-				<label for="age" class="col-sm-1 control-label">Age:</label> 
-				<div class="col-sm-2">
-					<input id="age" placeholder="age" type="number" min="1" max="110" required="required" class="form-control"/>
-				</div>
-			</div>
-			<div class="form-group">
-			<fieldset class="col-sm-offset-1">
-				<legend>Gender</legend>
-					<div class="radio">
-					  <label class="control-label">
-					    <input type="radio" name="optionsRadios" id="male" value="male" checked>Male
-					  </label>
-					</div>
-					<div class="radio">
-					  <label class="control-label">
-					    <input type="radio" name="optionsRadios" id="female" value="female">Female
-					  </label>
-					</div>
-			<fieldset>
-			</div>
-			<div class="form-group">
-			<fieldset class="col-sm-offset-1">
-				<legend>Activity Level</legend>
-					<div class="radio">
-					  <label class="control-label">
-					    <input type="radio" name="activity" id="sedentary" value="1.2" checked>sedentary (little or no exercise)
-					  </label>
-					</div>
-					<div class="radio">
-					  <label class="control-label">
-					    <input type="radio" name="activity" id="lightly" value="1.375">light exercise/sports 1-3 days/week
-					  </label>
-					</div>
-					<div class="radio">
-					  <label class="control-label">
-					    <input type="radio" name="activity" id="moderately" value="1.55">moderatetely active (moderate exercise/sports 3-5 days/week) 
-					  </label>
-					</div>
-					<div class="radio">
-					  <label class="control-label">
-					    <input type="radio" name="activity" id="heavy" value="1.725">heavy excercise (hard exercise/sports 6-7 days a week)
-					  </label>
-					</div>
-					<div class="radio">
-					  <label class="control-label">
-					    <input type="radio" name="optionsRadios" id="very" value="1.9">very heavy exercise (very hard exercise/sports &amp physical job or 2x training)
-					  </label>
-					</div>
-			<fieldset>	
-				<br />
-			<div class="form-group">
-				<div class="col-sm-10">
-					<input id="submitbutton" class="btn btn-primary btn-lg active" type="submit" value="Calculate It" />
-				</div>
-			</div>
-		</form>
-	</section>
-	<Section>
-		
-			
-	</section>
+			<div class="row">
+				<div class="col-md-4 alert alert-warning" role="alert">
+			  <blockquote>
+				  <p>Basal metabolic rate (BMR), and the closely related resting metabolic rate (RMR), 
+				  is the rate of energy expenditure by humans and other animals at rest, and is measured in 
+				  kJ per hour per kg body mass. Rest is defined as existing in a neutrally temperate environment 
+				  while in the post-absorptive state. In plants, different considerations apply.</p>
+				  <p>The release, and using, of energy in this state is sufficient only for the functioning of
+				  the vital organs: the heart, lungs, nervous system, kidneys, liver, intestine, sex organs, muscles, brain and skin.</p>
+			  
+				  <footer>Wikipedia <a href="https://en.wikipedia.org/wiki/Basal_metabolic_rate">Basal Metabolic Rate</a></footer>
+			  
+			  </blockquote>
+		  	</div>
+		</div>	
+	</div> <!-- End Description container -->
+	</section><!-- End Form Container -->
     <script src="http://code.jquery.com/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
 	<script src="js/calculator.js" type="text/javascript" charset="utf-8"></script>
