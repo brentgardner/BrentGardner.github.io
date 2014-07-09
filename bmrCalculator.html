@@ -42,13 +42,13 @@
 				<div class="col-md-6">
 				<form id="BMRForm" class="form-horizontal" role="form">
 					<div class="form-group">
-						<label for="weight" class="col-sm-1 control-label">Weight:</label>
+						<label for="weight" class="col-sm-2 control-label">Weight:</label>
 						<div class="col-sm-4">
 							<input id="weight" placeholder="Weight in lbs." autofocus="autofocus" type="number" min="50" max="500" required="required" class="form-control"/>
 						</div>
 					</div>
 					<div class="form-group">
-						<label for="feet" class="col-sm-1 control-label">Height:</label>
+						<label for="feet" class="col-sm-2 control-label">Height:</label>
 						<div class="col-sm-2">
 							<input id="feet" placeholder="Feet" type="number" min="3" max="10" required="required" class="form-control"/>
 						</div>
@@ -57,7 +57,7 @@
 						</div>
 					</div>
 					<div class="form-group">
-						<label for="age" class="col-sm-1 control-label">Age:</label> 
+						<label for="age" class="col-sm-2 control-label">Age:</label> 
 						<div class="col-sm-2">
 							<input id="age" placeholder="age" type="number" min="1" max="110" required="required" class="form-control"/>
 						</div>
@@ -82,7 +82,8 @@
 						<legend>Activity Level</legend>
 							<div class="radio">
 							  <label class="control-label">
-							    <input type="radio" name="activity" id="sedentary" value="1.2" checked>sedentary (little or no exercise)
+							    <input type="radio" name="activity" id="sedentary" value="1.2" checked 
+											data-toggle="popover" data-content="Do you spend most of your day on the couch or in a desk chair?">sedentary (little or no exercise)
 							  </label>
 							</div>
 							<div class="radio">
@@ -133,7 +134,8 @@
 	</div> <!-- End Description container -->
 	</section><!-- End Form Container -->
     <script src="http://code.jquery.com/jquery.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+	
 	<script src="js/calculator.js" type="text/javascript" charset="utf-8"></script>
     
   </body>

@@ -43,3 +43,7 @@ function showResults(){
 
 var el = document.getElementById("BMRForm");
 el.addEventListener('submit', handleSubmit, false);
+
+$('.popover-dismiss').popover({
+  trigger: 'focus'
+})
