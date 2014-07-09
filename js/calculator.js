@@ -44,6 +44,22 @@ function showResults(){
 var el = document.getElementById("BMRForm");
 el.addEventListener('submit', handleSubmit, false);
 
-$('.popover-dismiss').popover({
-  trigger: 'focus'
+$('#bgSedHelp').tooltip({
+	trigger: 'hover'
+})
+
+$('#bglightlyhelp').tooltip({
+	trigger: 'hover'
+})
+
+$('#bgModeratehelp').tooltip({
+	trigger: 'hover'
+})
+
+$('#bgHeavyhelp').tooltip({
+	trigger: 'hover'
+})
+
+$('#bgVeryHeavyhelp').tooltip({
+	trigger: 'hover'
 })
