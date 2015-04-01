@@ -1,12 +1,4 @@
 
-
-#badges ul{
-	list-style-type: none;
-	padding: 10px 50px;
-	margin: 0px;
-}
-
-#badges ul > li{
-	float: left;
-	padding: 25px;
+.thumbnail {
+	border: none;
 }
